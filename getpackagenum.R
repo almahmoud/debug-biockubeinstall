@@ -1,6 +1,7 @@
 library(futile.logger)
 args = commandArgs(trailingOnly=TRUE)
 version <- args[1]
+Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE)
 repos <- BiocManager::repositories()
 workrepos <- sub("/[[:digit:]\\.]+/", paste0("/",version,"/"), repos)
 db <- available.packages(repos = repos)
