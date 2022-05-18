@@ -1,0 +1,24 @@
+name: Get package number
+
+on: 
+  workflow_dispatch: {}
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  getpkgs:
+    container:
+      image: bioconductor/bioc-redis:manager
+    name: 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: Rscript getpackagenum.R "3.15" >> "315"
+      - run: Rscript getpackagenum.R "3.16" >> "316"
+      - run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "New round $(echo $(date +'%m-%d-%H-%M-%S'))"
+          git push
