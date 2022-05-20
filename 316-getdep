@@ -253,3 +253,8 @@ INFO [2022-05-20 14:46:32] 1819 software packages available
 INFO [2022-05-20 14:46:58] 14 of 3518 packages excluded
 INFO [2022-05-20 14:46:59] 0 of 3504 packages excluded
 INFO [2022-05-20 14:46:59] 3504 packages in dependency graph
+INFO [2022-05-20 14:52:05] 22041 packages, 7 repositories [pkg_dependencies()]
+INFO [2022-05-20 14:52:05] 1819 software packages available
+INFO [2022-05-20 14:52:34] 14 of 3518 packages excluded
+INFO [2022-05-20 14:52:34] 0 of 3504 packages excluded
+INFO [2022-05-20 14:52:34] 3504 packages in dependency graph
