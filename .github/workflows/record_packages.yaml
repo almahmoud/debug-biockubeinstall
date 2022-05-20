@@ -13,8 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: Rscript getpackagenum.R "3.15" >> "315"
-      - run: Rscript getpackagenum.R "3.16" >> "316"
+      - run: Rscript getpackagenum.R "3.15" >> "315-getnum"
+      - run: Rscript getpackagenum.R "3.16" >> "316-getnum"
+      - run: Rscript getdeps.R "3.15" >> "315-getdep"
+      - run: Rscript getdeps.R "3.16" >> "316-getdep"
       - run: |
           git config --global --add safe.directory "$GITHUB_WORKSPACE"
           git config user.name github-actions
