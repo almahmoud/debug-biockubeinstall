@@ -1,6 +1,6 @@
 library(BiocKubeInstall)
 
-
+Sys.setenv(BIOCONDUCTOR_USE_CONTAINER_REPOSITORY=FALSE)
 args = commandArgs(trailingOnly=TRUE)
 bioc_version = args[1]
 image_name = "bioconductor_docker"
