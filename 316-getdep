@@ -5111,3 +5111,10 @@ INFO [2022-05-29 14:19:27] 2068 software packages available
 INFO [2022-05-29 14:20:02] 14 of 3663 packages excluded
 INFO [2022-05-29 14:20:02] 0 of 3649 packages excluded
 INFO [2022-05-29 14:20:02] 3649 packages in dependency graph
+INFO [2022-05-29 14:32:55] 21974 packages, 6 repositories [pkg_dependencies()]
+INFO [2022-05-29 14:32:55] 21974 number of packages available in db
+INFO [2022-05-29 14:32:55] https://bioconductor.org/packages/3.16/bioc/src/contrib : URL in Bioc repos
+INFO [2022-05-29 14:32:55] 2068 software packages available
+INFO [2022-05-29 14:33:26] 14 of 3663 packages excluded
+INFO [2022-05-29 14:33:26] 0 of 3649 packages excluded
+INFO [2022-05-29 14:33:26] 3649 packages in dependency graph
